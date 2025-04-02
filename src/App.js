@@ -1,41 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
-
-// Placeholder components until the actual components are implemented
-const Login = ({ setIsAuthenticated }) => {
-  const handleLogin = () => {
-    // Simulate login
-    localStorage.setItem('token', 'dummy-token');
-    setIsAuthenticated(true);
-  };
-
-  return (
-    <div className="login-container">
-      <h1>RobotRaddingDream Login</h1>
-      <div className="login-form">
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
-        <button onClick={handleLogin}>Sign In</button>
-      </div>
-    </div>
-  );
-};
-
-const Trading = () => {
-  return (
-    <div className="trading-container">
-      <h1>Trading Dashboard</h1>
-      <p>Welcome to the RobotRaddingDream trading platform!</p>
-    </div>
-  );
-};
+import Login from './components/Login';
+import Trading from './components/Trading';
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = React.useState(false);
-  const [isLoading, setIsLoading] = React.useState(true);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
-  React.useEffect(() => {
+  useEffect(() => {
     // Check if user is already authenticated
     const token = localStorage.getItem('token');
     if (token) {
