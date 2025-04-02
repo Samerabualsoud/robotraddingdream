@@ -1,0 +1,144 @@
+.account-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+  overflow-y: auto;
+}
+
+.account-header {
+  margin-bottom: 20px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.account-info-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.info-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.info-card p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.settings-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.settings-tabs {
+  display: flex;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.settings-tabs button {
+  padding: 15px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+}
+
+.settings-tabs button.active {
+  background-color: white;
+  color: #2196f3;
+  border-bottom: 2px solid #2196f3;
+}
+
+.settings-content {
+  padding: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group input:disabled {
+  background-color: #f9f9f9;
+  color: #666;
+}
+
+.save-button {
+  padding: 12px 24px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #1976d2;
+}
+
+@media (max-width: 768px) {
+  .account-info-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .settings-tabs {
+    flex-direction: column;
+  }
+  
+  .settings-tabs button {
+    text-align: left;
+    padding: 12px 15px;
+  }
+  
+  .settings-tabs button.active {
+    border-bottom: none;
+    border-left: 2px solid #2196f3;
+  }
+  
+  .settings-content {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,38 @@
+.financial-news {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.news-loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.news-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-item h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.news-item p {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.news-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #999;
+}

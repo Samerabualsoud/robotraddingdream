@@ -1,0 +1,128 @@
+.trading-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.trading-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+  overflow-y: auto;
+}
+
+.trading-header {
+  margin-bottom: 20px;
+}
+
+.trading-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.chart-section, .order-section {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.symbol-selector {
+  display: flex;
+  margin-bottom: 15px;
+  overflow-x: auto;
+}
+
+.symbol-selector button {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.symbol-selector button.active {
+  background-color: #2196f3;
+  color: white;
+}
+
+.order-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group select, .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.order-type-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.order-type-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.buy-button {
+  background-color: #e6f7ff;
+  color: #0066cc;
+}
+
+.buy-button.active {
+  background-color: #0066cc;
+  color: white;
+}
+
+.sell-button {
+  background-color: #fff1f0;
+  color: #cc0000;
+}
+
+.sell-button.active {
+  background-color: #cc0000;
+  color: white;
+}
+
+.place-order-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.place-order-button:hover {
+  background-color: #1976d2;
+}
+
+@media (max-width: 768px) {
+  .trading-grid {
+    grid-template-columns: 1fr;
+  }
+}

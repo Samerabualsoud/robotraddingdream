@@ -1,0 +1,9 @@
+.tradingview-widget-container {
+  height: 400px;
+  width: 100%;
+}
+
+.tradingview-chart {
+  height: 100%;
+  width: 100%;
+}
