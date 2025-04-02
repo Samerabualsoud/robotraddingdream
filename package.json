@@ -1,0 +1,84 @@
+{
+  "name": "robotraddingdream",
+  "version": "1.0.0",
+  "description": "Advanced Forex Trading Platform with self-correcting multi-indicator strategy",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "test:capital-connection": "node scripts/test-capital-connection.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samerabualsoud/robotraddingdream.git"
+  },
+  "keywords": [
+    "forex",
+    "trading",
+    "mt4",
+    "mt5",
+    "capital.com",
+    "algorithmic-trading",
+    "technical-indicators"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Samerabualsoud/robotraddingdream/issues"
+  },
+  "homepage": "https://github.com/Samerabualsoud/robotraddingdream#readme",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "axios": "^1.3.5",
+    "chart.js": "^4.2.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1",
+    "technicalindicators": "^3.1.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^3.3.1",
+    "ws": "^8.13.0",
+    "zeromq": "^6.0.0-beta.16"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/express": "^4.17.17",
+    "@types/react-router-dom": "^5.3.3",
+    "jest": "^29.5.0",
+    "nodemon": "^2.0.22",
+    "ts-jest": "^29.1.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
