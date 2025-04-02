@@ -1,60 +1,58 @@
 # RobotRaddingDream - Advanced Forex Trading Platform
 
-A comprehensive web-based platform for forex trading with real MT4/MT5 integration, real-time data, and enhanced security features.
+## Overview
 
-## Features
+RobotRaddingDream is a sophisticated forex trading platform that integrates with Capital.com, MT4, and MT5. It features an advanced multi-indicator trading strategy with self-correction mechanisms that automatically adapt to market conditions and performance metrics.
 
-- Secure authentication with MT4/MT5 platforms
-- Real-time forex data visualization with TradingView integration
-- Automated trading capabilities
-- Comprehensive error handling and logging
-- Advanced security measures for trading credentials
-- Responsive web interface built with React and TypeScript
-- RESTful API backend with Node.js
+## Key Features
 
-## Technology Stack
+- **Multi-Indicator Strategy**: Combines RSI, MACD, Moving Averages, and Bollinger Bands for robust trading signals
+- **Self-Correction Mechanisms**: Automatically adjusts parameters based on performance and market conditions
+- **Market Regime Detection**: Identifies trending, ranging, and volatile market conditions
+- **Adaptive Position Sizing**: Adjusts risk based on strategy performance
+- **Real-Time Data Integration**: Connects to Capital.com, MT4, and MT5 for live market data
+- **Comprehensive Dashboard**: Visualizes strategy performance and market analysis
+- **Extensive Testing Framework**: Ensures reliability and robustness
 
-### Frontend
-- React 19
-- TypeScript
-- Material UI
-- Redux Toolkit
-- TradingView Widget API
-- Chart.js for data visualization
+## Documentation
 
-### Backend
-- Node.js
-- Express
-- MT4/MT5 API integration
-- Real-time data providers
-- JWT authentication
+- [Connection Guide](CONNECTION_GUIDE.md): Detailed instructions for connecting to Capital.com, MT4, and MT5
+- [Strategy Documentation](STRATEGY.md): Explanation of the multi-indicator strategy and self-correction mechanisms
+- [API Reference](API_REFERENCE.md): Documentation for the internal APIs and services
 
 ## Getting Started
 
-### Prerequisites
-- Node.js 18+
-- MT4/MT5 terminal with API access
-- Trading account credentials
+1. Clone the repository:
+```bash
+git clone https://github.com/Samerabualsoud/robotraddingdream.git
+cd robotraddingdream
+```
 
-### Installation
-1. Clone the repository
-2. Install dependencies for both frontend and backend
-3. Configure your MT4/MT5 connection settings
-4. Start the development servers
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Security Features
-- Secure credential handling
-- Data encryption
-- Rate limiting
-- Session management
-- Input validation
+3. Configure your trading platform connection (see [Connection Guide](CONNECTION_GUIDE.md))
 
-## Trading Capabilities
-- Real-time market data
-- Multiple currency pairs
-- Order placement (market, limit, stop)
-- Position management
-- Trading history and analytics
+4. Start the application:
+```bash
+npm start
+```
+
+5. Access the dashboard at http://localhost:3000
+
+## System Requirements
+
+- Node.js 14.x or higher
+- Modern web browser (Chrome, Firefox, Edge)
+- Internet connection
+- Account with Capital.com, MT4, or MT5
 
 ## License
-MIT
+
+This project is proprietary and confidential. Unauthorized copying, distribution, or use is strictly prohibited.
+
+## Support
+
+For support, please contact the repository owner.
